@@ -3,7 +3,7 @@
 ## 1. Requirement and install
 - PHP >=7.0
 ```bash
-composer require huyct/telegram-helper
+composer require huyct/log-helper
 ```
 - Add this line to `bootstrap/providers.php` in laravel >=11.0 and in `config/app.php` in lower version.
 ```php
