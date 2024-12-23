@@ -29,7 +29,7 @@ class SendMessageToTelegram
         $this->payload = $payload;
         $this->type = $type;
         if (empty($channel_id)) {
-            $this->channel_id = $type == 'error' ? config('telegramhelper.log.connections.telegram.error_channel_id') : config('telegramhelper.log.connections.telegram.log_channel_id');
+            $this->channel_id = $type == 'error' ? config('loghelper.log.connections.telegram.error_channel_id') : config('loghelper.log.connections.telegram.log_channel_id');
         } else {
             $this->channel_id = $channel_id;
         }
@@ -41,7 +41,7 @@ class SendMessageToTelegram
     public function handle(): void
     {
         try {
-            $token = config('helper.log.connections.telegram.bot_token');
+            $token = config('loghelper.log.connections.telegram.bot_token');
             $url = "https://api.telegram.org/bot{$token}/sendMessage";
             if (is_array($this->payload)) {
                 $message ="";

@@ -10,7 +10,7 @@ class TelegramSendLog
 {
     static function TelegramSendLog($e)
     {
-        if (config('telegramhelper.log.enable')) {
+        if (config('loghelper.log.enable')) {
             $ip = config('app.ip_server');
             $message = "- Source: " . config('app.name', 'localhost') . ": " . $ip;
             $message .= "\n- Path: " . url()->full();
@@ -30,7 +30,7 @@ class TelegramSendLog
             $message .= "\n- Date: " . date('H:i:s d/m/Y');
             $message .= "\n`" . $e->getFile() . "(" . $e->getLine() . ")`\n";
             $message .= "```" . json_encode(data_get($e->getTrace(), '0', null)) . "```";
-            dispatch(new SendMessageToTelegram($message, 'error'))->onQueue(config('telegramhelper.log.name_queue'));
+            dispatch(new SendMessageToTelegram($message, 'error'))->onQueue(config('loghelper.log.name_queue'));
         }
     }
 }

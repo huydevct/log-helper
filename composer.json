@@ -1,10 +1,10 @@
 {
-    "name": "huyct/telegram-helper",
-    "description": "telegram helper package",
+    "name": "huyct/log-helper",
+    "description": "Log Helper Package",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Huyct\\TelegramHelper\\": "src/"
+            "Huyct\\LogHelper\\": "src/"
         }
     },
     "authors": [

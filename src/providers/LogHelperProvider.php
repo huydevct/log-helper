@@ -6,13 +6,13 @@ namespace Huyct\TelegramHelper\providers;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\ServiceProvider;
 
-class TelegramHelperProvider extends ServiceProvider
+class LogHelperProvider extends ServiceProvider
 {
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/telegramhelper.php' => config_path('telegramhelper.php'),
-        ], 'telegramhelper');
+            __DIR__ . '/../config/loghelper.php' => config_path('loghelper.php'),
+        ], 'loghelper');
     }
 
     /**
@@ -23,7 +23,7 @@ class TelegramHelperProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/telegramhelper.php', 'telegramhelper'
+            __DIR__ . '/../config/loghelper.php', 'loghelper'
         );
     }
 }
