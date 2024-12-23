@@ -6,6 +6,10 @@
 composer require huyct/telegram-helper
 ```
 - Add this line to `bootstrap/providers.php` in laravel >=11.0 and in `config/app.php` in lower version.
+```php
+\Huyct\TelegramHelper\providers\TelegramHelperProvider::class,
+```
+- Publish config
 ```bash
 php artisan vendor:publish --tag=telegramhelper
 # Position of file config: config/telegramhelper.php
