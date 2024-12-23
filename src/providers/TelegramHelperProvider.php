@@ -12,7 +12,7 @@ class TelegramHelperProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/telegramhelper.php' => config_path('telegramhelper.php'),
-        ], 'telegramhelper_config');
+        ], 'telegramhelper');
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 return [
     'log' => [
-        'driver' => env("HELPER_LOG_DRIVER", 'slack'),
+        'driver' => env("HELPER_LOG_DRIVER", 'telegram'),
         'enable' => env("HELPER_LOG_ENABLE", true),
         'name_queue' => env('HELPER_LOG_QUEUE_NAME', 'send-log'),
         'connections' => [
