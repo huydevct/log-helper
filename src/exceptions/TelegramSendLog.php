@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Huyct\TelegramHelper\exceptions;
+namespace Huyct\LogHelper\exceptions;
 
-use Huyct\TelegramHelper\jobs\SendMessageToTelegram;
+use Huyct\LogHelper\jobs\SendMessageToTelegram;
 use Illuminate\Support\Facades\Request;
 
 class TelegramSendLog

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Huyct\TelegramHelper\providers;
+namespace Huyct\LogHelper\providers;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\ServiceProvider;

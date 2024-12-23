@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Huyct\TelegramHelper\jobs;
+namespace Huyct\LogHelper\jobs;
 
 
 use GuzzleHttp\Client;
