@@ -1,0 +1,22 @@
+{
+    "name": "huyct/telegram-helper",
+    "description": "telegram helper package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Huyct\\TelegramHelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "huyct",
+            "email": "huydevct@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.75|^9.0.0|^10.0.0|^11.0.0",
+        "php": "^7.3|^8.0|^8.1",
+        "guzzlehttp/guzzle": "^7.2",
+        "ext-json": "*"
+    }
+}
