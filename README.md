@@ -7,7 +7,7 @@ composer require huyct/log-helper
 ```
 - Add this line to `bootstrap/providers.php` in laravel >=11.0 and in `config/app.php` in lower version.
 ```php
-\Huyct\TelegramHelper\providers\LogHelperProvider::class,
+\Huyct\LogHelper\providers\LogHelperProvider::class,
 ```
 - Publish config
 ```bash
